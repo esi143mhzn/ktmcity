@@ -1,0 +1,150 @@
+
+
+.details{
+  padding-top: 100px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sub-destination{
+  width: 70%;
+}
+
+.destination-package-name{
+  margin: 0 0 20px 0;
+  font-size: 34px;
+  letter-spacing: 2px;
+}
+.destination-package-image{
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.destination-package-image img{
+  width: 100%;
+}
+
+.detail-description{
+  padding: 20px 0 ;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-description span{
+  padding-top: 10px;
+  text-align: justify; 
+}
+
+.stepbystep{
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+}
+
+.step1::before{
+  content: "1";
+  width: 50px;
+  height: 50px;
+  background-color: BLUE;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+
+
+
+
+.message-wrap {
+  width:100%;
+  height: auto;
+  box-sizing:border-box;
+  border-left:3px dotted #acbbc7;
+  position: relative;
+  z-index: 2;
+  padding: 0px 20px;
+}
+
+.message {
+  width:100%;
+  box-sizing:border-box;
+  position: relative;
+  z-index: 2;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  background: #fff;
+  border-radius: 5px;
+  font-size:20px;
+}
+
+.message .circle {
+  position: absolute;
+  top: 10px;
+  left: -50px;
+  background: #f0a184;
+  border: 2px solid #ccc;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+}
+
+.step-detail{
+  display: flex;
+  flex-direction: column;
+}
+
+.step-title{
+  font-size: 20px;
+
+}
+
+.step-description{
+  font-size: 16px;
+  color: #666666;
+  padding: 10px 0;
+  text-align: justify;
+}
+
+.enquiry{
+  
+  width: 70%;
+  background-color: #f6f6f6;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.enquiry-detail{
+  font-size: 22px;
+  color: #111;
+  padding: 0 0 20px 0;
+}
+
+.package-names{
+  font-size: 20px;
+  color: #666666;
+}
+
+.package-names span{
+  color: #f0a184;
+}
+
+.forms input{
+  width: 249px;
+  padding:10px  20px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.750em;
+  margin: 10px 20px 10px 0;
+}

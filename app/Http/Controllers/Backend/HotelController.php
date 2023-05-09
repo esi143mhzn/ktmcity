@@ -1,0 +1,158 @@
+<?php
+
+namespace App\Http\Controllers\Backend;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
+use App\Models\Hotel;
+
+class HotelController extends Controller
+{
+    private $_notify_message = "Hotel saved.";
+    private $_notify_type = 'info';
+    private $_hotel_image_location = 'uploads/hotel';
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $hotels = Hotel::orderBy('created_at', 'desc')->get();
+
+        return view('backend.hotel.index', compact('hotels'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('backend.hotel.create');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        try {
+            // dd($request->all());
+            $data = $request->all();
+            $image = $this->uploadHotel($request);
+            $image ? $data['image'] = $image : false ;
+            Hotel::create($data);
+        } catch (Exception $e) {
+            $this->_notify_message = "Failed to save hotel, Try again.";
+            $this->_notify_type = "danger";
+        }
+
+        return redirect()->route('backend.hotel.index')->with([
+            'notify_message' => $this->_notify_message,
+            'notify_type' => $this->_notify_type
+        ]);
+    }
+
+    public function uploadHotel($request) {
+        if($request->hasFile('image')) {
+            $file = $request->file('image');
+            $fileName = time() ."-". $file->getClientOriginalName();
+            $fileName = str_replace(' ', '-', $fileName);
+
+            $image = $this->_hotel_image_location. '/' .$fileName;
+            $upload_success= $file->move($this->_hotel_image_location, $fileName);
+
+            $upload = Image::make($image);
+            $upload->fit(990, 370)->save($this->_hotel_image_location .'/'. $fileName, 100);
+            
+            return $fileName;
+        }
+
+        return false;
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $hotel = Hotel::findOrFail($id);
+        // dd($hotel);
+
+        return view('backend.hotel.edit', compact('hotel'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        try {
+            $data = $request->all();
+            $image = $this->uploadHotel($request);
+            $image ? $data['image'] = $image : false ;
+            $hotel = Hotel::findOrFail($id);
+            if($request->hasFile('image')) {
+                if(is_file('uploads/hotel/' . $hotel->image)) {
+                    unlink('uploads/hotel/' . $hotel->image);
+                }
+            }
+            $hotel->update($data);
+        } catch (Exception $e) {
+            $this->_notify_message = "Failed to save hotel, Try again.";
+            $this->_notify_type = "danger";
+        }
+
+        return redirect()->route('backend.hotel.index')->with([
+            'notify_message' => $this->_notify_message,
+            'notify_type' => $this->_notify_type
+        ]);
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        try {
+            Hotel::destroy($id);
+
+            $this->_notify_message = "Hotel deleted.";
+        } catch (Exception $e) {
+            $this->_notify_message = "Failed to delete hotel, Try again.";
+            $this->_notify_type = "danger";
+        }
+
+        return redirect()->route('backend.hotel.index')->with([
+            'notify_message' => $this->_notify_message,
+            'notify_type' => $this->_notify_type
+        ]);
+    }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <title>Log In</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Philosopher&display=swap');
+        body
+        {
+            background-image: url({{asset('assets/image/2.jpg')}});
+            background-size: cover;
+        }
+        .card
+        {
+            position: absolute;
+            top: 50%;
+            left: 53%;
+            transform: translate(-50%,-50%);
+            width: 500px;
+            height: 450px;
+            border-radius: 10px;
+            opacity: .8;
+        }
+        .su
+        {
+           font-family: 'Roboto',sans-serif;
+           font-weight: bold;
+           font-size: 30px;
+           text-shadow: 3px;
+           color: #70d47d;
+           border-radius: 10px;
+        }
+        .ns
+        {
+            font-size: 15px;
+            margin-left: 10px;
+            color: black;
+        }
+        form
+        {
+            margin-top: 40px;
+        }
+        .row button
+        {
+            width: 24rem;
+        }
+         .logo
+         {
+            margin-left: 20px;
+         }
+         .navigation .navbar .navbar-nav .navbar-item .btn
+         {
+            background-color: #e96150;
+            color: white;
+         }
+         .row .btn
+         {
+            background-color: #e96150;
+            color: white;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-md fixed-top">
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a href="{{ url('/') }}" class="nav-link"><button class="btn">Home</button></a>
+                </li>
+            </ul>
+        </nav>  
+        </div>      
+    <div class="card " style="width: 28rem;">       
+      <div class="card-body" style="background-color: #f2f2f2">
+        <a href="{{url('/')}}" ><img src="{{asset('assets/image/logo.png')}}" height="100" width="300"></a>
+        <!-- <span style="color:#e96150; font-size: 35px; ">Log In</span> -->
+       <form action="{{ route('backend.auth.login') }}" method="post">
+        @csrf
+            <div class="form-group row">
+            <div class="col-sm-12" id="Email">
+            <input type="text" name="email" class="form-control" placeholder="Enter Email">
+            </div>
+            </div>
+            <div class="form-group row">        
+            <div class="col-sm-12" id="Password">
+            <input type="password" name="password" class="form-control" placeholder="Enter Password">
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                     <input type="checkbox" class="radioBtn"> Remember me
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+            <div class="col-sm-12">
+                     <button type="submit" class="btn">Log In</button>
+            </div>
+            </div>
+            <br>           
+            <div class="row">
+                <label class="ns"> Not signed In yet? Click here to signup, <a href="{{ url('/register') }}">Sign Up</a></label>
+            </div>
+    </form>
+    </div>
+</div>
+
+        
+
+
+
+
+
+<!--- script part--->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!---End script--->
+</body>
+</html>

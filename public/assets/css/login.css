@@ -1,0 +1,269 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    transition: 1s all;
+
+
+}
+
+.nav{
+  background: transparent;
+  box-shadow:  0 0 0 0;
+}
+
+.nav-bar{
+    width: 95vw;
+    justify-content: space-between;
+}
+
+menu{
+    width: 15%;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.menu li{
+    padding:  0 1vw;
+}
+
+
+
+.login{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.left{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(114, 75, 39);
+    position: relative;
+    min-width: 800px;
+}
+
+.left img{
+    width: 100%;
+    opacity: 0.5;
+}
+
+.right{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    min-width: 600px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sub-title{
+    color: grey;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.login-description{
+    width: 70%;
+    padding-bottom: 15px;
+}
+
+
+
+
+.login-mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .login-mode .form {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 19px;;
+  }
+  .login-mode .form .username {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    line-height: 30px;
+  }
+   .username input {
+    width: 90%;
+    border: 0;
+    line-height: 30px;
+    border-bottom: 1px solid #b4b2ce;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  .username label {
+      font-size: 17px;
+    font-weight: 500;
+    color: grey;
+  }
+  .login-mode .form .password {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    line-height: 30px;
+  }
+  .login-mode .form .password input {
+    font-family: 'Poppins', sans-serif;
+
+    width: 90%;
+    border: 0;
+    line-height: 30px;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+  }
+  .password label {
+    font-weight: 500;
+    color: grey;
+    font-size: 17px;
+
+  }
+  .login-mode .form .button {
+    margin: 15px;
+  }
+  .btn button {
+    background-color: #f0a184;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    margin: 30px 15px;
+  }
+  input:focus, button:focus {
+    outline: none;
+  }
+  input {
+    cursor: pointer;
+    color: black;
+  }
+  button {
+    cursor: pointer;
+    color: white;
+  }
+  
+  .remember{
+      width: 90%;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 7.5px;
+      color: grey;
+  }
+
+  .input{
+      display: flex;
+      align-items: center;
+  }
+
+  .remember a{
+    text-decoration: none;
+    color: rgb(84, 150, 211);
+  }
+
+  .terms{
+      width: 70%;
+      display: flex;
+      align-items: flex-end;
+      font-size: 13px;
+  }
+
+  .terms span{
+      padding: 0 0 0 4px;
+    color: rgb(84, 150, 211);
+
+  }
+
+  .des{
+      position: absolute;
+      top: 30%;
+      left: 20%;
+      color: white;
+      font-size: 30px;
+  }
+
+
+  .sub-dis{
+    position: absolute;
+    top: 45%;
+    right: 25%;
+    left: 25%;
+    color: white;
+}
+
+.sub-dis h4{
+    text-align: center;
+
+}
+
+.sub-dis input{
+    color: white;
+    padding: 10px 20px;
+    border: 0px;
+    background-color: #f0a184;
+    font-size: 23px;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 40%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+
+    body{
+        transition: 1s all;
+    }
+    .left{
+        width: 100%;
+        position: relative;
+    }
+
+    .left img{
+        width: 100%;
+    }
+
+    .right{
+        width: 100%;
+        color: white;
+        position: absolute;
+        top: 0%;
+        left: 5%;
+        z-index: 11111;
+    }
+
+    .des, .sub-dis{
+        display: none;
+    }
+
+    .sub-title, .login-description, .login-mode, label{
+        color: white;
+    }
+
+    .password label,  .username label{
+        color: white;
+    }
+
+    
+ }

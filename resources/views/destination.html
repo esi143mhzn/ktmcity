@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/slider.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/destination.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Superfish -->
+    <link rel="stylesheet" href="../css/superfish.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.min.css">
+    <!-- CS Select -->
+    <link rel="stylesheet" href="../css/cs-select.css">
+    <link rel="stylesheet" href="../css/cs-skin-border.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <title>Document</title>
+    <style>
+
+        .tour
+        {
+            position: relative;
+        }
+        .button {
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          position: absolute;
+          bottom: 5%;
+          right: 5%;
+        }
+        .button:hover {
+      background-color: rebeccapurple`;
+      color: white;
+    }
+        </style>
+ 
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="ex.html"><img src="../image/logo.png"></a>
+            </div>
+            <div class="menu-items">
+                <ul id="myTopnav">
+                    
+                    <li class="menu-item"><a href="./ex.html">Home</a></li>
+                    <li class="menu-item"><a href="./food.html">Food</a></li>
+                    <li class="menu-item">Destination</li>
+                    <li class="menu-item"><a href="./ride.html"> Ride</a></li>
+                    <li class="menu-item"><a href="./Guide.html">Guide</a></li>
+                    
+                    <li class="menu-item"><a href="./contact.html">Contact</a></li>
+                 
+                </ul>
+            </div>
+            <div class="icons">
+                <div class="signin">
+                    <li class="menu-item"><a href="./login.html"><i class="material-icons">vpn_key</a></i>
+                    <span>Log In</span>
+                </div>
+                <div class="register">
+                    <li class="menu-item"><a href="./Register.html">  <i class="material-icons">perm_identity </a> </i>
+                    <span>Register</span>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="backgrounds">
+       <div class="fh5co-hero">
+            <div class="fh5co-overlay"></div>
+            <div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);">
+                <div class="desc">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-5 col-md-5">
+                                <div class="tabulation animate-box">
+
+                                  <!-- Nav tabs -->
+                                   <ul class="nav nav-tabs" role="tablist">
+                                      <li role="presentation" class="active">
+                                        <a href="#flights" aria-controls="flights" role="tab" data-toggle="tab">Destination</a>
+                                      </li>
+                                      <li role="presentation">
+                                           <a href="#hotels" aria-controls="hotels" role="tab" data-toggle="tab">Hotels</a>
+                                      </li>
+                                      <li role="presentation">
+                                           <a href="#packages" aria-controls="packages" role="tab" data-toggle="tab">Food</a>
+                                      </li>
+                                      <li role="presentation">
+                                           <a href="#ride" aria-controls="ride" role="tab" data-toggle="tab">Ride</a>
+                                      </li>
+                                      <li role="presentation">
+                                           <a href="#guide" aria-controls="guide" role="tab" data-toggle="tab">Guide</a>
+                                      </li>
+
+                                   </ul>
+
+                                   <!-- Tab panes -->
+                                   <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="flights">
+                                       <div class="row">
+                                           
+                                          
+                                           <div class="col-sm-12 mt">
+                                               <section>
+                                                   <label for="class">Select Destination</label>
+                                                   <select class="cs-select cs-skin-border">
+                                                       <option value="" disabled selected>Kathmandu</option>
+                                                       <option value="economy">Basantapur</option>
+                                                       <option value="first">Kirtipur</option>
+                                                       <option value="business">Swombhunath</option>
+                                                   </select>
+                                               </section>
+                                           </div>
+                                           <div class="col-sm-12 mt">
+                                               <section>
+                                                   <label for="class">Select Duration</label>
+                                                   <select class="cs-select cs-skin-border">
+                                                       <option value="" disabled selected>1-4 days</option>
+                                                       <option value="economy">1-4 days</option>
+                                                       <option value="first">1 week</option>
+                                                       <option value="business">1 month</option>
+                                                   </select>
+                                               </section>
+                                           </div>
+                                          
+                                           <div class="col-sm-12 mt">
+                                               <section>
+                                                   <label for="class">Select Activity</label>
+                                                   <select class="cs-select cs-skin-border">
+                                                       <option value="" disabled selected>Tour</option>
+                                                       <option value="economy">Treeking</option>
+                                                       <option value="first">Cultural Tour</option>
+                                                       <option value="business">Sightseeing Tour</option>
+                                                   </select>
+                                               </section>
+                                           </div>
+                                          
+                                           
+                                           <div class="col-xs-12">
+                                               <input type="submit" class="btn btn-primary btn-block" value="Search Flight">
+                                           </div>
+                                       </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane" id="hotels">
+                                       <div class="row">
+                                           <div class="col-xxs-12 col-xs-12 mt">
+                                               <div class="input-field">
+                                                   <label for="from">City:</label>
+                                                   <input type="text" class="form-control" id="from-place" placeholder="Los Angeles, USA"/>
+                                               </div>
+                                           </div>
+                                           <div class="col-xxs-12 col-xs-6 mt alternate">
+                                               <div class="input-field">
+                                                   <label for="date-start">Return:</label>
+                                                   <input type="text" class="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
+                                               </div>
+                                           </div>
+                                           <div class="col-xxs-12 col-xs-6 mt alternate">
+                                               <div class="input-field">
+                                                   <label for="date-end">Check Out:</label>
+                                                   <input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>
+                                               </div>
+                                           </div>
+                                           <div class="col-sm-12 mt">
+                                               <section>
+                                                   <label for="class">Rooms:</label>
+                                                   <select class="cs-select cs-skin-border">
+                                                       <option value="" disabled selected>1</option>
+                                                       <option value="economy">1</option>
+                                                       <option value="first">2</option>
+                                                       <option value="business">3</option>
+                                                   </select>
+                                               </section>
+                                           </div>
+                                           <div class="col-xxs-12 col-xs-6 mt">
+                                               <section>
+                                                   <label for="class">Adult:</label>
+                                                   <select class="cs-select cs-skin-border">
+                                                       <option value="" disabled selected>1</option>
+                                                       <option value="1">1</option>
+                                                       <option value="2">2</option>
+                                                       <option value="3">3</option>
+                                                       <option value="4">4</option>
+                                                   </select>
+                                               </section>
+                                           </div>
+                                           <div class="col-xxs-12 col-xs-6 mt">
+                                               <section>
+                                                   <label for="class">Children:</label>
+                                                   <select class="cs-select cs-skin-border">
+                                                       <option value="" disabled selected>1</option>
+                                                       <option value="1">1</option>
+                                                       <option value="2">2</option>
+                                                       <option value="3">3</option>
+                                                       <option value="4">4</option>
+                                                   </select>
+                                               </section>
+                                           </div>
+                                           <div class="col-xs-12">
+                                               <input type="submit" class="btn btn-primary btn-block" value="Search Hotel">
+                                           </div>
+                                       </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane" id="packages">
+                                       <div class="row">
+                                           <div class="col-xxs-12 col-xs-12 mt">
+                                               <div class="input-field">
+                                                   <label for="from">Search for food:</label>
+                                                   <input type="text" class="form-control" id="from-place" placeholder="Momo /Samaybaji / Khajaset"/>
+                                               </div>
+                                           </div>
+                                          
+                                           <div class="col-xs-12">
+                                               <input type="submit" class="btn btn-primary btn-block" value="Search Food">
+                                           </div>
+                                       </div>
+                                    </div>
+                             
+
+
+                                    <div role="tabpanel" class="tab-pane" id="ride">
+                                       <div class="row">
+                                           
+                                    </div>
+                                    <div class="col-xxs-12 col-xs-12 mt">
+                                       <div class="input-field">
+                                           <label for="from">Full Name:</label>
+                                           <input type="text" class="form-control" id="from-place" placeholder="Nikesh Maharjan"/>
+                                       </div>
+                                   </div>
+
+
+                                   <div class="col-xxs-12 col-xs-12 mt">
+                                       <div class="input-field">
+                                           <label for="from">Contact N.o:</label>
+                                           <input type="text" class="form-control" id="from-place" placeholder="+9779813503419"/>
+                                       </div>
+                                   </div>
+
+
+                                    <div class="col-sm-12 mt">
+                                       <section>
+                                           <label for="class">Choose a type of vechiels</label>
+                                           <select class="cs-select cs-skin-border">
+                                               <option value="" disabled selected>Select</option>
+                                               <option value="economy">One wheeler</option>
+                                               <option value="first">Two wheeler</option>
+                                               
+                                           </select>
+                                       </section>
+                                   </div>
+                                   <div class="col-xxs-12 col-xs-12 mt">
+                                       <div class="input-field">
+                                           <label for="from">Destination:</label>
+                                           <input type="text" class="form-control" id="from-place" placeholder="Los Angeles, USA"/>
+                                       </div>
+                                   </div>
+                                   <div class="col-xxs-12 col-xs-6 mt alternate">
+                                       <div class="input-field">
+                                           <label for="date-start">Return:</label>
+                                           <input type="text" class="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
+                                       </div>
+                                   </div>
+                                   <div class="col-xxs-12 col-xs-6 mt alternate">
+                                       <div class="input-field">
+                                           <label for="date-end">Check Out:</label>
+                                           <input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>
+                                       </div>
+                                   </div>
+                                   <div class="col-xs-12">
+                                       <input type="submit" class="btn btn-primary btn-block" value="Book Ride"><br>
+                                   </div>
+                                   </div>
+
+                                   <div role="tabpanel" class="tab-pane" id="guide">
+                                       <div class="row">
+                                       </div>
+                                       <div class="col-xxs-12 col-xs-12 mt">
+                                          <div class="input-field">
+                                              <label for="from">Full Name:</label>
+                                              <input type="text" class="form-control" id="from-place" placeholder="Nikesh Maharjan"/>
+                                          </div>
+                                      </div>
+  
+  
+                                      <div class="col-xxs-12 col-xs-12 mt">
+                                          <div class="input-field">
+                                              <label for="from">Contact N.o:</label>
+                                              <input type="text" class="form-control" id="from-place" placeholder="+9779813503419"/>
+                                          </div>
+                                      </div>
+  
+  
+                                       <div class="col-sm-12 mt">
+                                          <section>
+                                              <label for="class">Choose a guide</label>
+                                              <select class="cs-select cs-skin-border">
+                                                  <option value="" disabled selected>English Guide</option>
+                                                  <option value="economy">English Guide</option>
+                                                  <option value="first">Chineses Guide</option>
+                                                  
+                                                  <option value="first">Japanese Guide</option>
+                                                  
+                                              </select>
+                                          </section>
+                                      </div>
+                                      <div class="col-xxs-12 col-xs-12 mt">
+                                          <div class="input-field">
+                                              <label for="from"> Your Destination</label>
+                                              <input type="text" class="form-control" id="from-place" placeholder="Los Angeles, USA"/>
+                                          </div>
+                                      </div>
+                                      <div class="col-xxs-12 col-xs-6 mt alternate">
+                                          <div class="input-field">
+                                              <label for="date-start">Return:</label>
+                                              <input type="text" class="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
+                                          </div>
+                                      </div>
+                                      <div class="col-xxs-12 col-xs-6 mt alternate">
+                                          <div class="input-field">
+                                              <label for="date-end">Check Out:</label>
+                                              <input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>
+                                          </div>
+                                      </div>
+                                      <div class="col-xs-12">
+                                          <input type="submit" class="btn btn-primary btn-block" value="Book  Guide"><br>
+                                      </div>
+                                      </div>
+                                    </div>
+                                   </div>
+
+                                 
+                           </div>
+                            <div class="desc2 animate-box">
+                                <div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
+                                    <p>HandCrafted by <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name">FreeHTML5.co</a></p>
+                                    <h2>Exclusive Limited Time Offer</h2>
+                                    <h3>Fly to Hong Kong via Los Angeles, USA</h3>
+                                    <span class="price">$599</span>
+                                    <!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="destinations">
+        <div class="top-destination">
+            <div class="service-title">Top-Destination</div>
+        </div>
+
+     
+        <div class="packages">
+            <div class="top-blog">
+                <div class="service-title">Cultural Tours</div>
+                <div class="service-subtitle">Tourism is travel for pleasure or business; also the theory and practice
+                of touring, the business of attracting, accommodating, and entertaining tourists, and the business
+                of operating tours. </div>
+            </div>
+            <div class="package-box">
+                <div class="tour">
+                    <div class="package-image">
+                        <img src="../image/1.jpg">
+                    </div>
+                    <div class="package-description">
+                        <div class="package-name">Pokhara Holiday Tour</div>
+                        <div class="package-second">
+                            <div class="package-duration">
+                                <i class="material-icons">access_time</i>
+                                <span>7 days</span>
+                            </div>
+                            <div class="package-people">
+                                <i class="material-icons">group</i>
+                                <span>Max people : 5<span>
+                            </div>
+                        </div>
+                        <div class="package-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                            efficitur ante. Donec dapibus dictum scelerisque.</div>
+                        <div class="package-price">
+                            <span>Rs 8000</span>
+                            <a href="destination-detail.html"> <i class="material-icons">arrow_forward</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour">
+                    <div class="package-image">
+                        <img src="../image/aa.jpg">
+                    </div>
+                    <div class="package-description">
+                        <div class="package-name">Pokhara Holiday Tour</div>
+                        <div class="package-second">
+                            <div class="package-duration">
+                                <i class="material-icons">access_time</i>
+                                <span>7 days</span>
+                            </div>
+                            <div class="package-people">
+                                <i class="material-icons">group</i>
+                                <span>Max people : 5<span>
+                            </div>
+                        </div>
+                        <div class="package-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                            efficitur ante. Donec dapibus dictum scelerisque.</div>
+                        <div class="package-price">
+                            <span>Rs 8000</span>
+                            <a href="destination-detail.html"> <i class="material-icons">arrow_forward</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour">
+                    <div class="package-image">
+                        <img src="../image/mustangtwo.jpg">
+                    </div>
+                    <div class="package-description">
+                        <div class="package-name">Pokhara Holiday Tour</div>
+                        <div class="package-second">
+                            <div class="package-duration">
+                                <i class="material-icons">access_time</i>
+                                <span>7 days</span>
+                            </div>
+                            <div class="package-people">
+                                <i class="material-icons">group</i>
+                                <span>Max people : 5<span>
+                            </div>
+                        </div>
+                        <div class="package-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                            efficitur ante. Donec dapibus dictum scelerisque.</div>
+                        <div class="package-price">
+                            <span>Rs 8000</span>
+                            <a href="destination-detail.html"> <i class="material-icons">arrow_forward</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour">
+                    <div class="package-image">
+                        <img src="../image/mustangtwo.jpg">
+                    </div>
+                    <div class="package-description">
+                        <div class="package-name">Pokhara Holiday Tour</div>
+                        <div class="package-second">
+                            <div class="package-duration">
+                                <i class="material-icons">access_time</i>
+                                <span>7 days</span>
+                            </div>
+                            <div class="package-people">
+                                <i class="material-icons">group</i>
+                                <span>Max people : 5<span>
+                            </div>
+                        </div>
+                        <div class="package-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                            efficitur ante. Donec dapibus dictum scelerisque.</div>
+                        <div class="package-price">
+                            <span>Rs 8000</span>
+                            <a href="destination-detail.html"> <i class="material-icons">arrow_forward</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour">
+                    <div class="package-image">
+                        <img src="../image/mustangtwo.jpg">
+                    </div>
+                    <div class="package-description">
+                        <div class="package-name">Pokhara Holiday Tour</div>
+                        <div class="package-second">
+                            <div class="package-duration">
+                                <i class="material-icons">access_time</i>
+                                <span>7 days</span>
+                            </div>
+                            <div class="package-people">
+                                <i class="material-icons">group</i>
+                                <span>Max people : 5<span>
+                            </div>
+                        </div>
+                        <div class="package-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                            efficitur ante. Donec dapibus dictum scelerisque.</div>
+                        <div class="package-price">
+                            <span>Rs 8000</span>
+                            <i class="material-icons">arrow_forward</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour">
+                    <div class="package-image">
+                        <img src="../image/mustangtwo.jpg">
+                    </div>
+                    <div class="package-description">
+                        <div class="package-name">Pokhara Holiday Tour</div>
+                        <div class="package-second">
+                            <div class="package-duration">
+                                <i class="material-icons">access_time</i>
+                                <span>7 days</span>
+                            </div>
+                            <div class="package-people">
+                                <i class="material-icons">group</i>
+                                <span>Max people : 5<span>
+                            </div>
+                        </div>
+                        <div class="package-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                            efficitur ante. Donec dapibus dictum scelerisque.</div>
+                        <div class="package-price">
+                            <span>Rs 8000</span>
+                            <i class="material-icons">arrow_forward</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="packages">
+            <div class="top-blog">
+                <div class="service-title">Hiking</div>
+                <div class="service-subtitle">Tourism is travel for pleasure or business; also the theory and practice
+                of touring, the business of attracting, accommodating, and entertaining tourists, and the business
+                of operating tours. </div>
+            </div>
+            <div class="package-box">
+                <div class="tour">
+                    <div class="package-image">
+                        <img src="../image/pokhara.jpg">
+                    </div>
+                    <div class="package-description">
+                        <div class="package-name">Pokhara Holiday Tour</div>
+                        <div class="package-second">
+                            <div class="package-duration">
+                                <i class="material-icons">access_time</i>
+                                <span>7 days</span>
+                            </div>
+                            <div class="package-people">
+                                <i class="material-icons">group</i>
+                                <span>Max people : 5<span>
+                            </div>
+                        </div>
+                        <div class="package-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                            efficitur ante. Donec dapibus dictum scelerisque.</div>
+                        <div class="package-price">
+                            <span>Rs 8000</span>
+                            <i class="material-icons">arrow_forward</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour">
+                    <div class="package-image">
+                        <img src="../image/aa.jpg">
+                    </div>
+                    <div class="package-description">
+                        <div class="package-name">Pokhara Holiday Tour</div>
+                        <div class="package-second">
+                            <div class="package-duration">
+                                <i class="material-icons">access_time</i>
+                                <span>7 days</span>
+                            </div>
+                            <div class="package-people">
+                                <i class="material-icons">group</i>
+                                <span>Max people : 5<span>
+                            </div>
+                        </div>
+                        <div class="package-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                            efficitur ante. Donec dapibus dictum scelerisque.</div>
+                        <div class="package-price">
+                            <span>Rs 8000</span>
+                            <i class="material-icons">arrow_forward</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour">
+                    <div class="package-image">
+                        <img src="../image/mustangtwo.jpg">
+                    </div>
+                    <div class="package-description">
+                        <div class="package-name">Pokhara Holiday Tour</div>
+                        <div class="package-second">
+                            <div class="package-duration">
+                                <i class="material-icons">access_time</i>
+                                <span>7 days</span>
+                            </div>
+                            <div class="package-people">
+                                <i class="material-icons">group</i>
+                                <span>Max people : 5<span>
+                            </div>
+                        </div>
+                        <div class="package-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                            efficitur ante. Donec dapibus dictum scelerisque.</div>
+                        <div class="package-price">
+                            <span>Rs 8000</span>
+                            <i class="material-icons">arrow_forward</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour">
+                    <div class="package-image">
+                        <img src="../image/mustangtwo.jpg">
+                    </div>
+                    <div class="package-description">
+                        <div class="package-name">Pokhara Holiday Tour</div>
+                        <div class="package-second">
+                            <div class="package-duration">
+                                <i class="material-icons">access_time</i>
+                                <span>7 days</span>
+                            </div>
+                            <div class="package-people">
+                                <i class="material-icons">group</i>
+                                <span>Max people : 5<span>
+                            </div>
+                        </div>
+                        <div class="package-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                            efficitur ante. Donec dapibus dictum scelerisque.</div>
+                        <div class="package-price">
+                            <span>Rs 8000</span>
+                            <i class="material-icons">arrow_forward</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour">
+                    <div class="package-image">
+                        <img src="../image/mustangtwo.jpg">
+                    </div>
+                    <div class="package-description">
+                        <div class="package-name">Pokhara Holiday Tour</div>
+                        <div class="package-second">
+                            <div class="package-duration">
+                                <i class="material-icons">access_time</i>
+                                <span>7 days</span>
+                            </div>
+                            <div class="package-people">
+                                <i class="material-icons">group</i>
+                                <span>Max people : 5<span>
+                            </div>
+                        </div>
+                        <div class="package-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                            efficitur ante. Donec dapibus dictum scelerisque.</div>
+                        <div class="package-price">
+                            <span>Rs 8000</span>
+                            <i class="material-icons">arrow_forward</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour">
+                    <div class="package-image">
+                        <img src="../image/mustangtwo.jpg">
+                    </div>
+                    <div class="package-description">
+                        <div class="package-name">Pokhara Holiday Tour</div>
+                        <div class="package-second">
+                            <div class="package-duration">
+                                <i class="material-icons">access_time</i>
+                                <span>7 days</span>
+                            </div>
+                            <div class="package-people">
+                                <i class="material-icons">group</i>
+                                <span>Max people : 5<span>
+                            </div>
+                        </div>
+                        <div class="package-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                            efficitur ante. Donec dapibus dictum scelerisque.</div>
+                        <div class="package-price">
+                            <span>Rs 8000</span>
+                            <i class="material-icons">arrow_forward</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="services-all">
+            <div class="top-service">
+                <div class="service-title">Find Your Services</div>
+                <div class="service-subtitle">Services that are available for your trip</div>
+            </div>
+            <div class="category">
+                <div class="all-category">
+                    <i class="fas fa-holly-berry"></i>
+                    <span>jatra</span>
+                </div>
+                <div class="all-category">
+                    <i class="material-icons">hotel</i>
+                    <span>Hotel</span>
+                </div>
+                <div class="all-category">
+                    <i class="material-icons">fastfood </i>
+                    <span>LocalFood</span>
+                </div>
+                <div class="all-category">
+                    <i class="fas fa-biking"></i>
+                    <span>Ride</span>
+                </div>
+                <div class="all-category">
+                    <i class="material-icons">confirmation_number </i>
+                    <span>Art & Culture</span>
+                </div>
+                <div class="all-category">
+                    <i class="fab fa-glide"></i>
+                    <span>Guide</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="about-us">
+                <div class="about-title">About Us</div>
+                <div class="about-description">
+                    We are the locals of the kathmandu valley promoting the local products and foods that are avilable within a valley. We also provide package related to the travles around thr kathmanduvalley. We can create the most unforgettable
+                    holiday for you, your family, and friends!
+                </div>
+            </div>
+            <div class="contact-information">
+                <div class="about-title">Contact Information</div>
+                <div class="contact-place">
+                    <i class="material-icons">place</i>
+                    <span>Kirtipur 05</span>
+                </div>
+                <div class="contact-place">
+                    <i class="material-icons">call</i>
+                    <span>-+977 9813 503 4199</span>
+                </div>
+                <div class="contact-place">
+                    <i class="material-icons">email</i>
+                    <span>ktmcity@gmail.com</span>
+                </div>
+            </div>
+            <div class="news">
+                <div class="about-title">Newsletter</div>
+                <div class="about-description">Sign up to our newsletter and be the first to know about the latest news,
+                    special offers, events,
+                    and discounts.</div>
+                <div class="subscribe">
+                    <input type="text" placeholder="Email">
+                    <i class="material-icons">email</i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <div><img src="../image/spark.jpg"></div>
+            <div>© 2020 All Rights Reserved</div>
+        </div>
+    </footer>
+</body>
+<script src="../js/slider.js"></script>
+<script src="../js/hour.js"></script>
+
+    <script src="../js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/sticky.js"></script>
+
+    <!-- Stellar -->
+    <script src="../js/jquery.stellar.min.js"></script>
+    <!-- Superfish -->
+    <script src="../js/hoverIntent.js"></script>
+    <script src="../js/superfish.js"></script>
+    <!-- Magnific Popup -->
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/magnific-popup-options.js"></script>
+    <!-- Date Picker -->
+    <script src="../js/bootstrap-datepicker.min.js"></script>
+    <!-- CS Select -->
+    <script src="../js/classie.js"></script>
+    <script src="../js/selectFx.js"></script>
+    
+    <!-- Main JS -->
+    <script src="../js/main.js"></script>
+
+</html>

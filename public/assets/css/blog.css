@@ -1,0 +1,23 @@
+.blog{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    position: relative;
+}
+
+.blog img{
+    width: 100%;
+
+}
+
+.blog-img{
+    position: absolute;
+    bottom: -5px;
+    left: -50px;
+    width: 100%;
+    height: 10%;
+}
+
+.blog-middle{
+    width: 85%;
+}
